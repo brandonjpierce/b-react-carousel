@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "es2015",
+    "react"
+  ],
+  "env": {
+    "production": {
+      "optional": [
+        "optimisation.react.constantElements",
+        "optimisation.react.inlineElements"
+      ]
+    }
+  },
+}

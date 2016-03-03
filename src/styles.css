@@ -1,0 +1,131 @@
+:root {
+
+}
+
+/*******************************************************************************
+ * SHARED
+ ******************************************************************************/
+
+.hawk-carousel__navigation--next,
+.hawk-carousel__navigation--prev,
+.hawk-carousel__dot {
+  cursor: pointer;
+	cursor: hand;
+	user-select: none;
+}
+
+
+/*******************************************************************************
+ * CONTAINER
+ ******************************************************************************/
+
+.hawk-carousel {
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hawk-carousel--draggable {
+  user-select: none;
+}
+
+/*******************************************************************************
+ * VIEWPORT
+ ******************************************************************************/
+
+.hawk-carousel__viewport {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/*******************************************************************************
+ * SLIDER
+ ******************************************************************************/
+
+.hawk-carousel__slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -ms-touch-action: pan-Y;
+}
+
+.hawk-carousel__slider:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  display: block;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/*******************************************************************************
+ * ITEMS
+ ******************************************************************************/
+
+.hawk-carousel__item {
+  float: left;
+  min-height: 1px;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+
+/*******************************************************************************
+ * NAVIGATION
+ ******************************************************************************/
+
+.hawk-carousel__navigation {
+
+}
+
+.hawk-carousel__navigation--next,
+.hawk-carousel__navigation--prev {
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  color: #fff;
+  border: none;
+  height: 36px;
+  display: block;
+  padding: 0 12px;
+  background: rgba(0,0,0,0.4);
+}
+
+.hawk-carousel__navigation--next {
+  right: 0;
+}
+
+.hawk-carousel__navigation--prev {
+  left: 0;
+}
+
+/*******************************************************************************
+ * DOTS
+ ******************************************************************************/
+
+.hawk-carousel__dots {
+  position: absolute;
+  text-align: center;
+  bottom: -48px;
+  left: 0;
+  right: 0;
+}
+
+.hawk-carousel__dot {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  border: none;
+  margin: 0 2px;
+  background: #333;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.hawk-carousel__dot--active {
+  opacity: 1;
+}
