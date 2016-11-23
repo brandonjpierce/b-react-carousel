@@ -18,8 +18,8 @@
     "gulp": "^3.9.0",
     "gulp-cssnext": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "webpack": "^1.12.8"
   },
   "dependencies": {
